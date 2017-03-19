@@ -4,6 +4,17 @@
   
     
     <entry>
+      <title><![CDATA[b]]></title>
+      <url>http://yoursite.com/2017/03/19/b/</url>
+      <content type="html"><![CDATA[<p>测试是否是图片格式的问题<br><a id="more"></a><br><img src="/images/2.jpg" alt=""></p>
+<p>再来一发<br><img src="/images/湖.jpg" alt=""></p>
+<p>三炮<br><img src="/images/三岛.jpg" alt=""></p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[a]]></title>
       <url>http://yoursite.com/2017/03/19/a/</url>
       <content type="html"><![CDATA[<p><img src="/images/三岛.jpg" alt=""></p>
