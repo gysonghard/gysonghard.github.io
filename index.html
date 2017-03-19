@@ -192,7 +192,7 @@
                 
                 <section class="switch-part switch-part2">
                     <div class="widget tagcloud" id="js-tagcloud">
-                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/好基友-一辈子/">好基友,一辈子</a></li></ul>
+                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/好基友-一辈子/">好基友,一辈子</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/搭建博客教程/">搭建博客教程</a></li></ul>
                     </div>
                 </section>
                 
@@ -307,68 +307,8 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <a id="more"></a>
-<h2 id="记录下自己的博客的搭建过程"><a href="#记录下自己的博客的搭建过程" class="headerlink" title="记录下自己的博客的搭建过程"></a>记录下自己的博客的搭建过程</h2><h3 id="写在前面的话"><a href="#写在前面的话" class="headerlink" title="写在前面的话"></a>写在前面的话</h3><p> 之前也没想过要搭建自己的博客,其实也有别的省事的平台:简书,CSDN…我自己也经常从上面找资料,但是吧毕竟是别人的平台,要按照别人的规则来.再加上一直关注张哥(stormzhang)<img src="http://stormzhang.com/" alt="张哥的博客">,张哥也建议自己搭建自己的博客,(真的很感谢张哥一直在分享自己的东西,虽未谋面但真的学到好多,不仅仅是技术还有生活方面,感谢张哥,感谢!!!)自己也想捣鼓下,希望能坚持写自己的博客,也希望能帮助到需要的人吧!</p>
-<h3 id="我的博客是hexo-github"><a href="#我的博客是hexo-github" class="headerlink" title="我的博客是hexo+github"></a>我的博客是hexo+github</h3><blockquote>
-<p>其实很多名词也不是很明白,就说下自己的过程吧!!!</p>
-</blockquote>
-<h4 id="1-需要安装的软件-Node-js-Git-如果需要科学上网-请学会科学上网吧"><a href="#1-需要安装的软件-Node-js-Git-如果需要科学上网-请学会科学上网吧" class="headerlink" title="1.需要安装的软件:Node.js + Git (如果需要科学上网,请学会科学上网吧!)"></a>1.需要安装的软件:Node.js + Git (如果需要科学上网,请学会科学上网吧!)</h4><blockquote>
-<p>(1)安装Node.js—Node.js是为了安装Hexo这个博客的框架 <img src="https://nodejs.org/en/" alt="Node.js官网"></p>
-<p>(2)安装Git—Git是非常牛逼的版本控制软件,如果你还不知道版本控制是什么的话,建议上网查下,谁用谁知道.相信我,用到的时候你会感谢自己曾经学习过Git的. <img src="https://git-scm.com/" alt="Git官网"></p>
-<p>或许你还不会使用Git,建议看下廖雪峰老师的Git教程,真的写的很好!!! <img src="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" alt="廖雪峰老师Git教程传送门"> 感谢廖老师,当初自己也是看的廖老师的教程学习的Git!!!</p>
-</blockquote>
-<h4 id="2-现在就开始安装Hexo"><a href="#2-现在就开始安装Hexo" class="headerlink" title="2.现在就开始安装Hexo"></a>2.现在就开始安装Hexo</h4><blockquote>
-<p>1.首先什么是Hexo,个人理解就是一个框架,我们利用它可以更简单的搭建自己的博客!</p>
-<p>2.刚才说过了安装Node.js就是为了安装Hexo,现在就开始安装.找打你想要安装的位置,然后右键 –&gt; Git Bash Here –&gt; ＄　npm install -g hexo-cli 这样它就会完成hexo的安装</p>
-<p>3.找到你想要存放博客的位置,开始一些初始化的操作.找到位置,右键 –&gt; Git Bash Here(相当于打开Git命令行) –&gt; hexo init blog(blog 是个文件夹名字可以替换成自己喜欢的名字) –&gt; cd blog –&gt; npm install 此时查看你的blog文件夹里面应该已经有了一些东西,其中:</p>
-<pre><code>_config.yml 文件是网站的配置文件，可以在其中配置网站的大部分参数。
-package.json 文件是应用程序的信息。
-source 是资源文件夹，是用来存放用户资源的地方。
-themes 是主题文件夹，Hexo会根据主题来生成不同的静态页面。
-scaffolds是模板件夹，当新建文章的时候，Hexo会根据模板来建立文件。
-</code></pre><p>4.设置主题,这个是自己可以随意切换的,假如你使用Next主题介绍下怎么使用.</p>
-<p> (1).到你安装Hexo的目录打开Git命令行,然后Clone你要使用的Next主题 ＄　git clone <a href="https://github.com/iissnan/hexo-theme-next.git" target="_blank" rel="external">https://github.com/iissnan/hexo-theme-next.git</a> themes/next </p>
-<p> (2).然后去<strong>站点配置文件</strong>下面使用你下载的Next主题.打开_config.yml –&gt; 找到theme:         next 修改为你要使用的next主题(修改配置文件属性和属性值之间要有<strong>空格</strong>)</p>
-<pre><code> 注意,配置文件在你的存放博客的位置,并且有两份,一个是在主目录外面的_config.yml(我们
-暂且把它叫做站点配置文件吧),另一个在你下载的主题里面(我们给它起名字叫做主题配置文件)
-</code></pre><p> (3).到你的blog目录,打开Git命令行 –&gt; ＄　hexo generate(生成静态页面,必须得是这样的页面!!!) –&gt; ＄　hexo server(打开本地服务,不要关掉窗口,关掉窗口就关闭掉本地服务了),在浏览器里面(输入的网址:<a href="http://localhost:4040)就可以本地访问到你的博客页面了" target="_blank" rel="external">http://localhost:4040)就可以本地访问到你的博客页面了</a></p>
-<p>5.现在有点小兴奋呢,但是仔细一想别人还是没法看咱们的博客呐,because现在是本地服务.现在就得依靠全球最大的同性交友网站GitHub了,我们就是把我们的博客托管到GitHub的.</p>
-<pre><code>(1).首先你需要注册GitHub,网上的教程很多,自己去看看.
-
-(2).现在你注册好自己的GitHub账号,并且早就安装好了Git,现在是时候把它俩连接起来了(它俩
-    不是一回事,我之前也是不明白,不明白的自己上网搜下!!!).就是配置SSH. 
-    ![配置SSH](https://segmentfault.com/a/1190000002645623)
-</code></pre><p>6.现在就开始部署到GitHub Pages<br>    (1).更改下站点配置文件,把<strong>自己的</strong>GitHub仓库地址写在里面</p>
-<pre>        
-    deploy:
-              type: git
-              repo: ssh://git@github.com/gysonghard/gysonghard.github.io.git
-              branch: master
-</pre>
-
-<p>   (2).Git地址建议使用SSH地址。在上面的参数设置好了之后，使用下面的命令安装 ＄　hexo-deployer-git 插件，只有安装了插件之后才可以部署到Github Pages。</p>
-<pre><code>＄　npm install hexo-deployer-git --save
-</code></pre><p>   (3).下面就开始生成静态页面然后部署到服务器.</p>
-<pre><code>$ hexo generate # 生成静态页面
-$　hexo deploy # 部署到GitHub
-</code></pre><p>   (4).现在在浏览器里面应该就可以访问到你自己的炫酷的博客了!!!</p>
-<p>   7.一些注意点:</p>
-<pre><code>(1).想要本地访问的话要一直开着本地服务,就是hexo server 那个窗口不能关掉
-
-(2).托管到GitHub访问的时候可能会有点小延迟,所以有时候修改了立即查看看不到效果,稍等下,一般十几s就差不多了
-
-(3).配置完SSH,一定要**测试**下.
-
-(4).托管到GitHub的步骤顺序:hexo generate(生成静态页面) --&gt;  ＄　hexo deploy(部署到GitHub服务器)
-
-(5).hexo命令都有简写,但建议开始还是有能力的话就全写得了有助于你理解每个命令的含义,还能练习下单词.
-</code></pre></blockquote>
-<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>自己当时搭建的时候参照了好几个博客的教程,总会有些不一样的地方.慢慢的才捣鼓好,大家看我的博客也会有不太一样的地方,我不可能把每个步骤每个情况都罗列出来,建议大家有问题多上网找找资料,我一直比较欣赏的一句话:你要相信你肯定不是第一个遇到这个问题的人!</p>
-<p>感谢这个开源的年代,感谢网上分享自己的知识的人,真的从大家身上学到了好多,感谢感谢全是感谢!</p>
-<p>希望自己能坚持写自己博客，虽然自己也是菜鸟，但起码我们还是在努力的路上，哪怕我们不能做很多，但只要是前进的路上，这就是一个好的开始，不是吗？</p>
-<p><img src="/images/Gakki.jpg" alt=""></p>
-<p>希望我的博客能给你带来一些帮助.</p>
-
+              <h2 id="记录下自己的博客的搭建过程"><a href="#记录下自己的博客的搭建过程" class="headerlink" title="记录下自己的博客的搭建过程"></a>记录下自己的博客的搭建过程</h2>
+          
       
     </div>
     
@@ -377,6 +317,14 @@ $　hexo deploy # 部署到GitHub
       
 
       
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/搭建博客教程/">搭建博客教程</a></li></ul>
+    </div>
+
+      
+        <p class="article-more-link">
+          <a href="/2017/03/19/小勇哥的博客诞生记/#more">阅读全文 >></a>
+        </p>
       
       <div class="clearfix"></div>
     </div>
