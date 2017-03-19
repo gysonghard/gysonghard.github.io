@@ -6,7 +6,7 @@
     <entry>
       <title><![CDATA[小勇哥的博客诞生记]]></title>
       <url>http://yoursite.com/2017/03/19/%E5%B0%8F%E5%8B%87%E5%93%A5%E7%9A%84%E5%8D%9A%E5%AE%A2%E8%AF%9E%E7%94%9F%E8%AE%B0/</url>
-      <content type="html"><![CDATA[<p>＜！– more –＞</p>
+      <content type="html"><![CDATA[<a id="more"></a>
 <h2 id="记录下自己的博客的搭建过程"><a href="#记录下自己的博客的搭建过程" class="headerlink" title="记录下自己的博客的搭建过程"></a>记录下自己的博客的搭建过程</h2><h3 id="写在前面的话"><a href="#写在前面的话" class="headerlink" title="写在前面的话"></a>写在前面的话</h3><p> 之前也没想过要搭建自己的博客,其实也有别的省事的平台:简书,CSDN…我自己也经常从上面找资料,但是吧毕竟是别人的平台,要按照别人的规则来.再加上一直关注张哥(stormzhang)<img src="http://stormzhang.com/" alt="张哥的博客">,张哥也建议自己搭建自己的博客,(真的很感谢张哥一直在分享自己的东西,虽未谋面但真的学到好多,不仅仅是技术还有生活方面,感谢张哥,感谢!!!)自己也想捣鼓下,希望能坚持写自己的博客,也希望能帮助到需要的人吧!</p>
 <h3 id="我的博客是hexo-github"><a href="#我的博客是hexo-github" class="headerlink" title="我的博客是hexo+github"></a>我的博客是hexo+github</h3><blockquote>
 <p>其实很多名词也不是很明白,就说下自己的过程吧!!!</p>
