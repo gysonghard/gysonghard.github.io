@@ -6,8 +6,7 @@
     <entry>
       <title><![CDATA[test]]></title>
       <url>http://yoursite.com/2017/03/19/test/</url>
-      <content type="html"><![CDATA[<p><img src="/2017/03/19/test/" alt=""></p>
-]]></content>
+      <content type="html"><![CDATA[<img src="/2017/03/19/test/03/19/test/1.jpg" alt="1.jpg" title="">]]></content>
       
         
     </entry>
