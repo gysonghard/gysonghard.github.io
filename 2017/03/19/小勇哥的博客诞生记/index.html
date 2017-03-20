@@ -22,7 +22,7 @@
 <meta property="og:site_name" content="小勇哥的博客">
 <meta property="og:description" content="记录下自己的博客的搭建过程">
 <meta property="og:image" content="http://yoursite.com/images/Gakki.jpg">
-<meta property="og:updated_time" content="2017-03-19T16:06:28.136Z">
+<meta property="og:updated_time" content="2017-03-20T05:27:28.019Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="小勇哥的博客诞生记">
 <meta name="twitter:description" content="记录下自己的博客的搭建过程">
@@ -311,11 +311,11 @@
 <h4 id="1-需要安装的软件-Node-js-Git-如果需要科学上网-请学会科学上网吧"><a href="#1-需要安装的软件-Node-js-Git-如果需要科学上网-请学会科学上网吧" class="headerlink" title="1.需要安装的软件:Node.js + Git (如果需要科学上网,请学会科学上网吧!)"></a>1.需要安装的软件:Node.js + Git (如果需要科学上网,请学会科学上网吧!)</h4><blockquote>
 <p>(1)安装Node.js—Node.js是为了安装Hexo这个博客的框架 <a href="https://nodejs.org/en/" target="_blank" rel="external">Node.js官网</a></p>
 <p>(2)安装Git—Git是非常牛逼的版本控制软件,如果你还不知道版本控制是什么的话,建议上网查下,谁用谁知道.相信我,用到的时候你会感谢自己曾经学习过Git的. <a href="https://git-scm.com/" target="_blank" rel="external">Git官网</a></p>
-<p>或许你还不会使用Git,建议看下廖雪峰老师的Git教程,真的写的很好!!! <a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" target="_blank" rel="external">廖雪峰老师Git教程传送门</a> 感谢廖老师,当初自己也是看的廖老师的教程学习的Git!!!</p>
+<p>或许你还不会使用Git,建议看下廖雪峰老师的Git教程,真的写的很好!!! <a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" target="_blank" rel="external">廖雪峰老师Git教程</a> 感谢廖老师,当初自己也是看的廖老师的教程学习的Git!!!</p>
 </blockquote>
 <h4 id="2-现在就开始安装Hexo"><a href="#2-现在就开始安装Hexo" class="headerlink" title="2.现在就开始安装Hexo"></a>2.现在就开始安装Hexo</h4><blockquote>
 <p>1.首先什么是Hexo,个人理解就是一个框架,我们利用它可以更简单的搭建自己的博客!</p>
-<p>2.刚才说过了安装Node.js就是为了安装Hexo,现在就开始安装.找打你想要安装的位置,然后右键 –&gt; Git Bash Here –&gt; ＄　npm install -g hexo-cli 这样它就会完成hexo的安装</p>
+<p>2.刚才说过了安装Node.js就是为了安装Hexo,现在就开始安装.找打你想要安装的位置,然后右键 –&gt; Git Bash Here –&gt; $　npm install -g hexo-cli 这样它就会完成hexo的安装</p>
 <p>3.找到你想要存放博客的位置,开始一些初始化的操作.找到位置,右键 –&gt; Git Bash Here(相当于打开Git命令行) –&gt; $ hexo init blog(blog 是个文件夹名字可以替换成自己喜欢的名字) –&gt; $ cd blog –&gt; $ npm install 此时查看你的blog文件夹里面应该已经有了一些东西,其中:</p>
 <pre><code>_config.yml 文件是网站的配置文件，可以在其中配置网站的大部分参数。
 package.json 文件是应用程序的信息。
@@ -327,14 +327,16 @@ scaffolds是模板件夹，当新建文章的时候，Hexo会根据模板来建�
 <p> (2).然后去<strong>站点配置文件</strong>下面使用你下载的Next主题.打开_config.yml –&gt; 找到theme:         next 修改为你要使用的next主题(修改配置文件属性和属性值之间要有<strong>空格</strong>)</p>
 <pre><code> 注意,配置文件在你的存放博客的位置,并且有两份,一个是在主目录外面的_config.yml(我们
 暂且把它叫做站点配置文件吧),另一个在你下载的主题里面(我们给它起名字叫做主题配置文件)
-</code></pre><p> (3).到你的blog目录,打开Git命令行 –&gt; ＄　hexo generate(生成静态页面,必须得是这样的页面!!!) –&gt; ＄　hexo server(打开本地服务,不要关掉窗口,关掉窗口就关闭掉本地服务了),在浏览器里面(输入的网址:<a href="http://localhost:4040)就可以本地访问到你的博客页面了" target="_blank" rel="external">http://localhost:4040)就可以本地访问到你的博客页面了</a></p>
+</code></pre><p> (3).到你的blog目录,打开Git命令行 –&gt; $　hexo generate(生成静态页面,必须得是这样的页面!!!) –&gt; $　hexo server(打开本地服务,不要关掉窗口,关掉窗口就关闭掉本地服务了),在浏览器里面(输入的网址:<a href="http://localhost:4040)就可以本地访问到你的博客页面了" target="_blank" rel="external">http://localhost:4040)就可以本地访问到你的博客页面了</a></p>
 <p>5.现在有点小兴奋呢,但是仔细一想别人还是没法看咱们的博客呐,because现在是本地服务.现在就得依靠全球最大的同性交友网站GitHub了,我们就是把我们的博客托管到GitHub的.</p>
 <pre><code>(1).首先你需要注册GitHub,网上的教程很多,自己去看看.
 
 (2).现在你注册好自己的GitHub账号,并且早就安装好了Git,现在是时候把它俩连接起来了(它俩
     不是一回事,我之前也是不明白,不明白的自己上网搜下!!!).就是配置SSH. 
-    [配置SSH](https://segmentfault.com/a/1190000002645623)
-</code></pre><p>6.现在就开始部署到GitHub Pages<br>    (1).更改下站点配置文件,把<strong>自己的</strong>GitHub仓库地址写在里面</p>
+</code></pre></blockquote>
+<pre><code>[配置SSH](https://segmentfault.com/a/1190000002645623)
+</code></pre><blockquote>
+<p>6.现在就开始部署到GitHub Pages<br>    (1).更改下站点配置文件,把<strong>自己的</strong>GitHub仓库地址写在里面</p>
 <pre>        
     deploy:
               type: git
@@ -353,9 +355,9 @@ $　hexo deploy # 部署到GitHub
 
 (2).托管到GitHub访问的时候可能会有点小延迟,所以有时候修改了立即查看看不到效果,稍等下,一般十几s就差不多了
 
-(3).配置完SSH,一定要**测试**下.
+(3).配置完SSH,一定要测试下是否成功!!!
 
-(4).托管到GitHub的步骤顺序:hexo generate(生成静态页面) --&gt;  ＄　hexo deploy(部署到GitHub服务器)
+(4).托管到GitHub的步骤顺序:hexo generate(生成静态页面) --&gt;  $　hexo deploy(部署到GitHub服务器)
 
 (5).hexo命令都有简写,但建议开始还是有能力的话就全写得了有助于你理解每个命令的含义,还能练习下单词.
 </code></pre></blockquote>
@@ -375,7 +377,7 @@ $　hexo deploy # 部署到GitHub
         <p><span>本文标题:</span><a href="/2017/03/19/小勇哥的博客诞生记/">小勇哥的博客诞生记</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">sgy</a></p>
         <p><span>发布时间:</span>2017-03-19, 22:24:24</p>
-        <p><span>最后更新:</span>2017-03-20, 00:06:28</p>
+        <p><span>最后更新:</span>2017-03-20, 13:27:28</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2017/03/19/小勇哥的博客诞生记/" title="小勇哥的博客诞生记">http://yoursite.com/2017/03/19/小勇哥的博客诞生记/</a>
             <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2017/03/19/小勇哥的博客诞生记/　　作者: sgy" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
