@@ -34,9 +34,7 @@ scaffolds是模板件夹，当新建文章的时候，Hexo会根据模板来建�
 
 (2).现在你注册好自己的GitHub账号,并且早就安装好了Git,现在是时候把它俩连接起来了(它俩
     不是一回事,我之前也是不明白,不明白的自己上网搜下!!!).就是配置SSH. 
-</code></pre></blockquote>
-<pre><code>[配置SSH](https://segmentfault.com/a/1190000002645623)
-</code></pre><blockquote>
+</code></pre><p><a href="https://segmentfault.com/a/1190000002645623" target="_blank" rel="external">配置SSH的教程</a></p>
 <p>6.现在就开始部署到GitHub Pages<br>    (1).更改下站点配置文件,把<strong>自己的</strong>GitHub仓库地址写在里面</p>
 <pre>        
     deploy:
