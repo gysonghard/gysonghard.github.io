@@ -6,8 +6,8 @@
     <entry>
       <title><![CDATA[Kotlin学习笔记]]></title>
       <url>http://yoursite.com/2017/06/22/Kotlin%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
-      <content type="html"><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><a id="more"></a>
-<p>这只是自己的一些笔记,难免有不足之处,如有发现敬请指正!</p>
+      <content type="html"><![CDATA[<h2 id="自己的Kotlin学习笔记"><a href="#自己的Kotlin学习笔记" class="headerlink" title="自己的Kotlin学习笔记"></a>自己的Kotlin学习笔记</h2><a id="more"></a>
+<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>这只是自己的一些笔记,难免有不足之处,如有发现敬请指正!</p>
 <p>学习Kotlin,首选<a href="https://www.kotlincn.net/" target="_blank" rel="external">Kotlin官网</a></p>
 <p><img src="http://on3sv9pyx.bkt.clouddn.com/憨豆先生开车啦.gif" alt="开车啦"></p>
 <h3 id="关于Kotlin"><a href="#关于Kotlin" class="headerlink" title="关于Kotlin"></a>关于Kotlin</h3><ul>
