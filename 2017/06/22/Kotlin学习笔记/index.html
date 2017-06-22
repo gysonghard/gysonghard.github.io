@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Kotlin," />
 
 
 
@@ -87,15 +87,37 @@
 
 
 
-<meta name="description" content="永远年轻,永远热泪盈眶!">
-<meta property="og:type" content="website">
-<meta property="og:title" content="小勇哥的博客">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="前言这只是自己的一些笔记,难免有不足之处,如有发现敬请指正!
+学习Kotlin,首选Kotlin官网
+
+关于Kotlin
+Kotlin 是一个基于 JVM 的编程语言,由 JetBrains 开发.
+Kotlin 可以变异成Java字节码,也可以变异成JavaScript,方便在没有 JVM 的设备上运行.
+JetBrains 作为广受欢迎的Java IDE IntelliJ 的提供商,在 Ap">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Kotlin学习笔记">
+<meta property="og:url" content="http://yoursite.com/2017/06/22/Kotlin学习笔记/index.html">
 <meta property="og:site_name" content="小勇哥的博客">
-<meta property="og:description" content="永远年轻,永远热泪盈眶!">
+<meta property="og:description" content="前言这只是自己的一些笔记,难免有不足之处,如有发现敬请指正!
+学习Kotlin,首选Kotlin官网
+
+关于Kotlin
+Kotlin 是一个基于 JVM 的编程语言,由 JetBrains 开发.
+Kotlin 可以变异成Java字节码,也可以变异成JavaScript,方便在没有 JVM 的设备上运行.
+JetBrains 作为广受欢迎的Java IDE IntelliJ 的提供商,在 Ap">
+<meta property="og:image" content="http://on3sv9pyx.bkt.clouddn.com/憨豆先生开车啦.gif">
+<meta property="og:image" content="http://on3sv9pyx.bkt.clouddn.com/面向对象.gif">
+<meta property="og:updated_time" content="2017-06-22T14:14:59.199Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="小勇哥的博客">
-<meta name="twitter:description" content="永远年轻,永远热泪盈眶!">
+<meta name="twitter:title" content="Kotlin学习笔记">
+<meta name="twitter:description" content="前言这只是自己的一些笔记,难免有不足之处,如有发现敬请指正!
+学习Kotlin,首选Kotlin官网
+
+关于Kotlin
+Kotlin 是一个基于 JVM 的编程语言,由 JetBrains 开发.
+Kotlin 可以变异成Java字节码,也可以变异成JavaScript,方便在没有 JVM 的设备上运行.
+JetBrains 作为广受欢迎的Java IDE IntelliJ 的提供商,在 Ap">
+<meta name="twitter:image" content="http://on3sv9pyx.bkt.clouddn.com/憨豆先生开车啦.gif">
 
 
 
@@ -123,13 +145,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/06/22/Kotlin学习笔记/"/>
 
 
 
 
 
-  <title> 小勇哥的博客 </title>
+  <title> Kotlin学习笔记 | 小勇哥的博客 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -156,9 +178,7 @@
     
   
 
-  <div class="container sidebar-position-right 
-   page-home 
- ">
+  <div class="container sidebar-position-right page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -241,9 +261,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -273,10 +293,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2017/06/22/Kotlin学习笔记/" itemprop="url">
-                  Kotlin学习笔记
-                </a>
+                Kotlin学习笔记
               
             
           </h1>
@@ -305,6 +322,16 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a class="cloud-tie-join-count" href="/2017/06/22/Kotlin学习笔记/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count join-count" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -327,9 +354,7 @@
       
 
       
-        
-          
-            <a id="more"></a>
+        <a id="more"></a>
 <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>这只是自己的一些笔记,难免有不足之处,如有发现敬请指正!</p>
 <p>学习Kotlin,首选<a href="https://www.kotlincn.net/" target="_blank" rel="external">Kotlin官网</a></p>
 <p><img src="http://on3sv9pyx.bkt.clouddn.com/憨豆先生开车啦.gif" alt="开车啦"></p>
@@ -401,417 +426,93 @@
 <h3 id="Object-工具类"><a href="#Object-工具类" class="headerlink" title="Object 工具类"></a>Object 工具类</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">/**</div><div class="line"> * Created by sgy on 2017/6/20.</div><div class="line"> * objext--工具类 类似Java里面的静态工具类</div><div class="line"> */</div><div class="line">object LogUtils &#123;</div><div class="line"></div><div class="line">    fun i(tag : String,msg : String)&#123;</div><div class="line">        Log.i(tag,msg)</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    fun e(tag : String,msg : String)&#123;</div><div class="line">        Log.e(tag,msg)</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">// 调用object工具类里面的方法可以直接通过类名调用</div><div class="line">LogUtils.i(&quot;tag&quot;,&quot;这是日志工具打印的日志&quot;)</div></pre></td></tr></table></figure>
 
-          
-        
       
     </div>
 
     <div>
       
+        
+
+      
     </div>
 
     <div>
       
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/06/09/改变/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="sgy">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="http://on3sv9pyx.bkt.clouddn.com/kobe.jpeg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="小勇哥的博客">
-    </span>
-
-    
-      <header class="post-header">
-
         
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2017/06/09/改变/" itemprop="url">
-                  改变
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-09T16:17:02+08:00">
-                2017-06-09
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="http://on3sv9pyx.bkt.clouddn.com/微信收钱.png" alt="sgy WeChat Pay"/>
+          <p>微信打赏</p>
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
       
       
-
-      
-        
-          <h2 id="随便唠叨"><a href="#随便唠叨" class="headerlink" title="随便唠叨"></a>随便唠叨</h2>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/06/09/改变/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/19/小勇哥的博客诞生记/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="sgy">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="http://on3sv9pyx.bkt.clouddn.com/kobe.jpeg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="小勇哥的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2017/03/19/小勇哥的博客诞生记/" itemprop="url">
-                  小勇哥的博客诞生记
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-19T22:24:24+08:00">
-                2017-03-19
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+        <div id="alipay" style="display: inline-block">
+          <img id="alipay_qr" src="http://on3sv9pyx.bkt.clouddn.com/支付宝收钱.jpg" alt="sgy Alipay"/>
+          <p>支付宝打赏</p>
         </div>
-      </header>
-    
+      
+    </div>
+  </div>
 
-
-    <div class="post-body" itemprop="articleBody">
 
       
-      
+    </div>
 
+    <div>
       
         
-          <h2 id="记录下自己的博客的搭建过程"><a href="#记录下自己的博客的搭建过程" class="headerlink" title="记录下自己的博客的搭建过程"></a>记录下自己的博客的搭建过程</h2>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/03/19/小勇哥的博客诞生记/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
 
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
       
     </div>
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/05/帅马/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="sgy">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="http://on3sv9pyx.bkt.clouddn.com/kobe.jpeg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="小勇哥的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2017/03/05/帅马/" itemprop="url">
-                  帅马
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-05T10:54:39+08:00">
-                2017-03-05
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-
+            <a href="/tags/Kotlin/" rel="tag"># Kotlin</a>
           
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
         
-          <h1 id="谨以此文献给小马哥"><a href="#谨以此文献给小马哥" class="headerlink" title="谨以此文献给小马哥"></a>谨以此文献给小马哥</h1>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/03/05/帅马/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/06/09/改变/" rel="next" title="改变">
+                <i class="fa fa-chevron-left"></i> 改变
+              </a>
+            
           </div>
-          <!--/noindex-->
-        
-      
-    </div>
 
-    <div>
-      
-    </div>
+          <span class="post-nav-divider"></span>
 
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
       
 
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -819,6 +520,12 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
+    
+  </div>
+
 
         </div>
         
@@ -838,8 +545,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="http://on3sv9pyx.bkt.clouddn.com/kobe.jpeg"
@@ -912,6 +628,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#关于Kotlin"><span class="nav-number">2.</span> <span class="nav-text">关于Kotlin</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Kotlin语言特点"><span class="nav-number">3.</span> <span class="nav-text">Kotlin语言特点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Kotlin一些基本语法"><span class="nav-number">4.</span> <span class="nav-text">Kotlin一些基本语法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Kotlin-基本数据类型"><span class="nav-number">5.</span> <span class="nav-text">Kotlin 基本数据类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数组"><span class="nav-number">6.</span> <span class="nav-text">数组</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#判断语句"><span class="nav-number">7.</span> <span class="nav-text">判断语句</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#When语句-类似Java里面的-switch-case-语句"><span class="nav-number">8.</span> <span class="nav-text">When语句 (类似Java里面的 switch-case 语句)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#While循环"><span class="nav-number">9.</span> <span class="nav-text">While循环</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#do-while循环"><span class="nav-number">10.</span> <span class="nav-text">do-while循环</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#for循环"><span class="nav-number">11.</span> <span class="nav-text">for循环</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#break-amp-amp-continue"><span class="nav-number">12.</span> <span class="nav-text">break&&continue</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#字符串"><span class="nav-number">13.</span> <span class="nav-text">字符串</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#List集合-集合分为两类-1-长度不可变的集合-2-长度可变的集合"><span class="nav-number">14.</span> <span class="nav-text">List集合 (集合分为两类:1.长度不可变的集合 2.长度可变的集合)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Set集合"><span class="nav-number">15.</span> <span class="nav-text">Set集合</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Map集合"><span class="nav-number">16.</span> <span class="nav-text">Map集合</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#函数"><span class="nav-number">17.</span> <span class="nav-text">函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#可变参数–vararg"><span class="nav-number">18.</span> <span class="nav-text">可变参数–vararg</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#异常"><span class="nav-number">19.</span> <span class="nav-text">异常</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#面向对象"><span class="nav-number"></span> <span class="nav-text">面向对象</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#类-amp-amp-对象"><span class="nav-number">1.</span> <span class="nav-text">类&&对象</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#属性"><span class="nav-number">2.</span> <span class="nav-text">属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#构造函数"><span class="nav-number">3.</span> <span class="nav-text">构造函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#set-amp-amp-get-amp-amp-普通函数"><span class="nav-number">4.</span> <span class="nav-text">set() && get() && 普通函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#继承"><span class="nav-number">5.</span> <span class="nav-text">继承</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#方法重写"><span class="nav-number">6.</span> <span class="nav-text">方法重写</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#抽象类"><span class="nav-number">7.</span> <span class="nav-text">抽象类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#接口"><span class="nav-number">8.</span> <span class="nav-text">接口</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#嵌套类-amp-amp-内部类"><span class="nav-number">9.</span> <span class="nav-text">嵌套类&&内部类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#对象表达式-amp-对象声明-类似Java里面的匿名内部类"><span class="nav-number">10.</span> <span class="nav-text">对象表达式&对象声明(类似Java里面的匿名内部类)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数据类"><span class="nav-number">11.</span> <span class="nav-text">数据类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#枚举"><span class="nav-number">12.</span> <span class="nav-text">枚举</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#单例模式"><span class="nav-number">13.</span> <span class="nav-text">单例模式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Object-工具类"><span class="nav-number">14.</span> <span class="nav-text">Object 工具类</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -1017,6 +749,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
 
   
 
